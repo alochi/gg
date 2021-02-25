@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><img th:src="${gif}" th:alt="${gifinfo}"/></div>
+<table>
+    <thead>
+    <tr>
+        <th>Валюта</th>
+        <th>Курс сегодня</th>
+        <th>Сравнить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <div th:each="i : ${rates}">
+        <tr>
+            <td th:text="${i.getKey()}"/>
+            <td th:text="${i.getValue()}"/>
+            <td><a th:href="'/' + ${i.getKey()}">check</a></td>
+        </tr>
+    </div>
+    </tbody>
+</table>
+
+</body>
+</html>
