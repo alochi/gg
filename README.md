@@ -1,4 +1,4 @@
-# give gif
+# give gif (kotlin + springboot)
 
 1) скопировать адрес проекта Code - Clone (HTTPS) - https://github.com/alochi/gg.git
 2) В IDE File - New - Project from Version Control, далее нажать кнопку Clone
